@@ -2,22 +2,6 @@ body {
     --border-color: rgb(47, 51, 54);
 }
 
-.wd-bg-color-black {
-    background-color: black;
-}
-
-.wd-fg-color-white { 
-    color: white;
-}
-
-.wd-fg-color-gray {
-    color: rgb(110, 118, 125);
-}
-
-.wd-margin-left {
-    margin-left: 16px;
-}
-
 .wd-margin-top {
     margin-top: 12px;
 }
