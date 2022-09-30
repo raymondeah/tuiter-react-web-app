@@ -1,83 +1,91 @@
-.wd-bg-color-black{
+.wd-bg-color-black {
     background-color: black;
 }
 
-.wd-bg-color-dark-grey {
-    background-color: darkgray;
+.wd-bg-color-dark-gray {
+    background-color: rgb(47, 51, 54);
 }
 
 .wd-fg-color-white { 
-    color: white; 
+    color: white;
 }
 
-.wd-fg-color-link {
-    color: rgb(110, 118, 125)
+.wd-fg-color-gray {
+    color: rgb(110, 118, 125);
+}
+
+.wd-fg-color-dark-gray {
+    color: rgb(47, 51, 54);
 }
 
 .wd-margin-left {
     margin-left: 16px;
 }
 
-.wd-margin-right {
+.wd-margin-right-12px {
+    margin-right: 12px;
+}
+
+.wd-margin-right-16px {
     margin-right: 16px;
 }
 
-.wd-gear {
-    margin-top: 16px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    float: right;
-    text-decoration: none;
-}
-
-.input {
-    border-style: hidden;
-    margin-top: 16px;
-    width: calc(100% - 64px);
-    height: 30px;
-    border-radius: 10px;
-    float: left;
+.wd-font-size-13 {
+    font-size: 13;
 }
 
 .wd-search-bar {
-    /* border: 2px solid white; */
-    height: 50px;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wd-gear {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+input {
+   height: 3em;
+   width: calc(100% - 100px);
+   padding-left: 32px;
+   border: none;
+   border-radius: 16px;
 }
 
 .wd-hyperlinks {
-    height: 50px;
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: left;
+    display: flex; 
     align-items: center;
-    border-bottom: 2px solid darkgray;
+    border-bottom: 2px solid rgb(47, 51, 54);
 }
 
 .wd-hyperlink {
-    box-sizing: border-box;
     font-size: 15px;
-    height: 100%;
-    text-decoration: none;
-    /* border: 2px solid green; */
     padding: 16px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-decoration: none;
 }
 
-.wd-for-you {
+.wd-selected {
     color: rgb(29,161,242);
     border-bottom: 2px solid rgb(29,161,242);
 }
 
-::placeholder {
-    color: white;
+.wd-suggested-post {
+    line-height: 0.5;
+    border-bottom: 1px solid rgb(47, 51, 54);
+    padding: 8px 0;
 }
 
-/* a {
-    text-decoration: none;
-} */
+.wd-suggested-post-img {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
