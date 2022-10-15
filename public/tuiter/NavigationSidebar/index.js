@@ -5,11 +5,11 @@ const NavigationSidebar = () => {
                 <i class="fab fa-twitter"></i>
             </a>
 
-            <a href="#" class="list-group-item list-group-item-action d-none d-xl-block d-xxl-block">
+            <a href="../home.html" class="list-group-item list-group-item-action d-none d-xl-block d-xxl-block">
                 <i class="fas fa-home"></i>
                 Home
             </a>
-            <a href="#" class="list-group-item list-group-item-action d-block d-sm-block d-md-block d-lg-block d-xl-none d-xxl-non">
+            <a href="../home.html" class="list-group-item list-group-item-action d-block d-sm-block d-md-block d-lg-block d-xl-none d-xxl-non">
                 <i class="fas fa-home"></i>
             </a>
 
@@ -53,11 +53,11 @@ const NavigationSidebar = () => {
                 <i class="fas fa-list"></i>
             </a>
 
-            <a href="#" class="list-group-item list-group-item-action d-none d-xl-block d-xxl-block">
+            <a href="../profile.html" class="list-group-item list-group-item-action d-none d-xl-block d-xxl-block">
                 <i class="fas fa-user"></i>
                 Profile
             </a>
-            <a href="#" class="list-group-item list-group-item-action d-blcok d-sm-block d-md-block d-lg-block d-xl-none d-xxl-none">
+            <a href="../profile.html" class="list-group-item list-group-item-action d-blcok d-sm-block d-md-block d-lg-block d-xl-none d-xxl-none">
                 <i class="fas fa-user"></i>
             </a>
 
@@ -76,7 +76,7 @@ const NavigationSidebar = () => {
             </a>
         </div>
         <div class="d-grid mt-2">
-            <a href="tuit.html"
+            <a href="../tuit.html"
             class="btn btn-primary btn-block rounded-pill">
             Tuit</a>
         </div>
