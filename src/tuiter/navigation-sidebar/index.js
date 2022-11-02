@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavigationSidebar = (
     {
@@ -8,21 +9,21 @@ const NavigationSidebar = (
     return (
         <div className="list-group">
             <a href="/tuiter" className="list-group-item">
-                <i class="bi bi-twitter"></i>
+                <i className="bi bi-twitter"></i>
             </a>
 
-            <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter/home" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'home'?'active':''}`}>
                 <i class="bi bi-house-fill"></i>
                 Home
-            </a>
-            <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'home'?'active':''}`}>
+            </Link>
+            <Link to="/tuiter/home" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'home'?'active':''}`}>
                 <i class="bi bi-house-fill"></i>
-            </a>
+            </Link>
 
-            <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'explore'?'active':''}`}>
+            <Link to="/tuiter/" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'explore'?'active':''}`}>
                 <i class="bi bi-hash"></i>
                 Explore
-            </a>
+            </Link>
             <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'explore'?'active':''}`}>
                 <i class="bi bi-hash"></i>
             </a>
