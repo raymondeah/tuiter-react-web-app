@@ -12,21 +12,21 @@ const NavigationSidebar = (
                 <i className="bi bi-twitter"></i>
             </a>
 
-            <Link to="/tuiter/home" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter/" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'home'?'active':''}`}>
                 <i class="bi bi-house-fill"></i>
                 Home
             </Link>
-            <Link to="/tuiter/home" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter/" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'home'?'active':''}`}>
                 <i class="bi bi-house-fill"></i>
             </Link>
 
-            <Link to="/tuiter/" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'explore'?'active':''}`}>
+            <Link to="/tuiter/explore" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'explore'?'active':''}`}>
                 <i class="bi bi-hash"></i>
                 Explore
             </Link>
-            <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'explore'?'active':''}`}>
+            <Link to="/tuiter/explore" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'explore'?'active':''}`}>
                 <i class="bi bi-hash"></i>
-            </a>
+            </Link>
 
             <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'notifications'?'active':''}`}>
                 <i class="bi bi-bell-fill"></i>

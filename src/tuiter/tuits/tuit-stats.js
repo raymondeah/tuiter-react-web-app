@@ -20,14 +20,6 @@ const TuitStats  = (
 ) => {
     return(
         <div className="row">
-            {/* <div className="col-10">
-                <div>{post.userName} . {post.time}</div>
-                <div className="fw-bolder">{post.topic}</div>
-                <div>{post.title}</div>
-            </div>
-            <div className="col-2">
-                <img alt="post img" width={70} className="float-end rounded-3" src={`/images/${post.image}`}/>
-            </div> */}
             <div className="col-3">
                 <div className="d-flex flex-row">
                     <i class="bi bi-chat me-1"></i>
