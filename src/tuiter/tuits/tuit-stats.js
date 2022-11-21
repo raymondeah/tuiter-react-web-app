@@ -1,4 +1,6 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitStats  = (
     {
@@ -18,29 +20,56 @@ const TuitStats  = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+
     return(
         <div className="row">
-            <div className="col-3">
+            <div className="col-2">
                 <div className="d-flex flex-row">
-                    <i class="bi bi-chat me-1"></i>
+                    <i className="bi bi-chat me-1"></i>
                     <p>{post.replies}</p>
                 </div>
             </div>
-            <div className="col-3">
+
+            <div className="col-2">
                 <div className="d-flex flex-row">
-                    <i class="bi bi-arrow-repeat me-1"></i>
+                    <i className="bi bi-arrow-repeat me-1"></i>
                     <p>{post.retuits}</p>
                 </div>
             </div>
-            <div className="col-3">
-            <div className="d-flex flex-row">
-                    {post.liked && <i class="bi bi-heart-fill me-1 text-danger"></i>}
-                    {!post.liked && <i class="bi bi-heart me-1"></i>}
-                    <p>{post.likes}</p>
+
+            <div className="col-2">
+                <div className="d-flex flex-row">
+                    {post.liked && <i onClick={() => dispatch(updateTuitThunk({
+                        ...post,
+                        likes: post.likes + 1
+                    }))} className="bi bi-heart-fill me-1 text-danger"></i>}
+                    {!post.liked && <i onClick={() => dispatch(updateTuitThunk({
+                        ...post,
+                        likes: post.likes + 1,
+                        liked: true
+                    }))} className="bi bi-heart me-1"></i>}
+                    <p>{post.liked && post.likes}</p>
                 </div>
             </div>
+
             <div className="col-2">
-                <i class="bi bi-share"></i>
+                <div className="d-flex flex-row">
+                    {post.disliked && <i onClick={() => dispatch(updateTuitThunk({
+                        ...post,
+                        dislikes: post.dislikes + 1
+                    }))} className="bi bi-hand-thumbs-down-fill me-1 text-primary"></i>}
+                    {!post.disliked && <i onClick={() => dispatch(updateTuitThunk({
+                        ...post,
+                        dislikes: post.dislikes + 1,
+                        disliked: true
+                    }))} className="bi bi-hand-thumbs-down me-1"></i>}
+                    <p>{post.disliked && post.dislikes}</p>
+                </div>
+            </div>
+            
+            <div className="col-2">
+                <i className="bi bi-share"></i>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "./tuits-reducer";
+import { deleteTuitThunk } from "../../services/tuits-thunks.js";
 
 const TuitItem  = (
     {
@@ -23,17 +23,17 @@ const TuitItem  = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item">
             <div className="d-flex flex-row">
                 <div className="col-1 me-3">
-                    <img alt="post img" width={50} className="float-end rounded-circle" src={`/images/${post.image}`}/>
+                    <img alt="post img" width={50} className="float-end rounded-circle" src={`/images/${post.image === undefined ? "boring.png" : post.image}`}/>
                 </div>
                 <div className="col-11">
                     <i className="bi bi-x-lg float-end me-2" onClick={() => deleteTuitHandler(post._id)}></i>
-                    <div>{post.userName} <i class="bi bi-patch-check-fill text-primary"></i> {post.handle} <i class="bi bi-dot"></i> {post.time}</div>
+                    <div>{post.userName} <i className="bi bi-patch-check-fill text-primary"></i> {post.handle} <i className="bi bi-dot"></i> {post.time}</div>
                     <div className="mb-2">{post.tuit}</div>
                     <TuitStats post={post}/>
                 </div>

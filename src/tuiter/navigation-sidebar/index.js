@@ -13,71 +13,71 @@ const NavigationSidebar = (
             </a>
 
             <Link to="/tuiter/" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'home'?'active':''}`}>
-                <i class="bi bi-house-fill"></i>
+                <i className="bi bi-house-fill"></i>
                 Home
             </Link>
             <Link to="/tuiter/" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'home'?'active':''}`}>
-                <i class="bi bi-house-fill"></i>
+                <i className="bi bi-house-fill"></i>
             </Link>
 
             <Link to="/tuiter/explore" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'explore'?'active':''}`}>
-                <i class="bi bi-hash"></i>
+                <i className="bi bi-hash"></i>
                 Explore
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'explore'?'active':''}`}>
-                <i class="bi bi-hash"></i>
+                <i className="bi bi-hash"></i>
             </Link>
 
             <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'notifications'?'active':''}`}>
-                <i class="bi bi-bell-fill"></i>
+                <i className="bi bi-bell-fill"></i>
                 Notifications
             </a>
             <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'notifications'?'active':''}`}>
-                <i class="bi bi-bell-fill"></i>
+                <i className="bi bi-bell-fill"></i>
             </a>
 
             <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'messages'?'active':''}`}>
-                <i class="bi bi-envelope-fill"></i>
+                <i className="bi bi-envelope-fill"></i>
                 Messages
             </a>
             <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'messages'?'active':''}`}>
-                <i class="bi bi-envelope-fill"></i>
+                <i className="bi bi-envelope-fill"></i>
             </a>
 
             <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'bookmarks'?'active':''}`}>
-                <i class="bi bi-bookmark-fill"></i>
+                <i className="bi bi-bookmark-fill"></i>
                 Bookmarks
             </a>
             <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'bookmarks'?'active':''}`}>
-                <i class="bi bi-bookmark-fill"></i>
+                <i className="bi bi-bookmark-fill"></i>
             </a>
 
             <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'lists'?'active':''}`}>
-                <i class="bi bi-list-ul"></i>
+                <i className="bi bi-list-ul"></i>
                 Lists
             </a>
             <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'lists'?'active':''}`}>
-                <i class="bi bi-list-ul"></i>
+                <i className="bi bi-list-ul"></i>
             </a>
 
             <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'profile'?'active':''}`}>
-                <i class="bi bi-person-fill"></i>
+                <i className="bi bi-person-fill"></i>
                 Profile
             </a>
             <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'profile'?'active':''}`}>
-                <i class="bi bi-person-fill"></i>
+                <i className="bi bi-person-fill"></i>
             </a>
             
             <a href="/tuiter" className={`list-group-item list-group-item-action d-none d-xl-block d-xxl-block ${active === 'more'?'active':''}`}>
-                <i class="bi bi-circle-fill"></i>
+                <i className="bi bi-circle-fill"></i>
                 More
             </a>
             <a href="/tuiter" className={`list-group-item list-group-item-action d-block d-xl-none d-xxl-none ${active === 'more'?'active':''}`}>
-                <i class="bi bi-circle-fill"></i>
+                <i className="bi bi-circle-fill"></i>
             </a>
-            <div class="d-grid mt-2">
+            <div className="d-grid mt-2">
                 <a href="../tuit.html"
-                class="btn btn-primary btn-block rounded-pill">
+                className="btn btn-primary btn-block rounded-pill">
                 Tuit</a>
             </div>
         </div>
